@@ -1,0 +1,59 @@
+/* Globel */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+}
+
+/* Header and Top Navigation*/
+
+.hero-picture {
+  background: url('../img/hero-image3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+
+}
+
+
+/* Hero */
+
+
+
+/* Containers */
+
+/* Sidebars */
+
+
+/* Floats */
+
+
+
+
+/* Clear-fix */
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Links*/
+
+
+
+/* Media Queries */
