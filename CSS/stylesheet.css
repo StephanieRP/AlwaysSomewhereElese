@@ -24,9 +24,38 @@ body {
 }
 
 .logo {
-  height: 250px;
-  width: 250px;
+  margin: 2% 0;
+  height: 25%;
+  width: 25%;
+}
 
+#site-logo {
+  height: 20%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#topnav {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  overflow: none;
+}
+
+#topnav li{
+  float: left;
+  list-style-type: none;
+  padding: 1em;
+}
+
+#topnav a{
+text-decoration: none;
+}
+
+.hero h2,
+.hero h3,
+.hero p {
+  text-align: center;
 }
 
 
