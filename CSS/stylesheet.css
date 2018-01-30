@@ -24,9 +24,9 @@ body {
 }
 
 .logo {
-  margin: 2% 0;
-  height: 25%;
-  width: 25%;
+  margin: 2% 2% 0;
+  height: 15%;
+  width: 15%;
 }
 
 #site-logo {
@@ -37,20 +37,25 @@ body {
 
 #topnav {
   position: absolute;
-  top: 0;
-  left: 65%;
+  top: 8%;
+  left: 55%;
   overflow: none;
+
 }
 
 #topnav li{
   float: left;
   list-style-type: none;
-  padding: 1em;
+  padding: 0 2em 0;
 }
 
 #topnav a{
 text-decoration: none;
+font-weight: bold;
 }
+
+
+/* Hero */
 
 .hero h2,
 .hero h3,
@@ -58,9 +63,15 @@ text-decoration: none;
   text-align: center;
 }
 
+.hero-top-text {
+  font-size: 3rem;
+  padding: 2em;
+}
 
-/* Hero */
-
+.hero-middle-text {
+  font-size: 2rem;
+  padding: 1em;
+}
 
 
 /* Containers */
