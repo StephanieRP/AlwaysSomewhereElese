@@ -6,6 +6,8 @@ Shadow: #D9F1FA
 Red: #EB7272
 */
 
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,400i,700');
+
 *::after,
 *::before {
   box-sizing: inherit;
