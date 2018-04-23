@@ -1,5 +1,5 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,400i,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -190,7 +190,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #0d1218 url("../img/ep_naturalblack.png");
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -206,54 +205,30 @@ body {
 section {
   display: -webkit-box; }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  padding: 20px 60px;
-  color: black;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: all 0.2s ease; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    outline: 0;
-    transform: scale(1.01);
-    transform: translateY(3px); }
-
 a {
-  color: #0074D9;
-  text-decoration: none;
-  outline: 0; }
-  a:hover, a:focus {
-    color: #F012BE; }
+  text-decoration: none; }
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Bitter", sans-serif; }
+  .btn--welcome {
+    font-size: 3em;
+    color: #0092C1;
+    border-bottom: 5px solid #c12f00;
+    padding: 0 .3em;
+    text-shadow: 0 0.1em #FFF; }
+    .btn--welcome:hover {
+      background: #c12f00;
+      border: none;
+      border-radius: 5px;
+      text-shadow: none; }
 
 ::selection {
-  background: #FFF498; }
+  background: blue; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: blue; }
 
 img::selection {
   background: transparent; }
@@ -262,14 +237,14 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #FFF498; }
+  -webkit-tap-highlight-color: blue; }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: 'Bitter', sans-serif;
+  font-weight: 700;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); }
 
 .gigantic {
@@ -312,7 +287,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0 0 20px 0;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif; }
 
 em {
   font-style: italic; }
@@ -327,67 +303,28 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.flex-video {
-  height: 0;
-  margin-bottom: 0.88889rem;
-  overflow: hidden;
-  padding-bottom: 56%;
-  position: relative; }
-
-.flex-video iframe,
-.flex-video object,
-.flex-video embed,
-.flex-video video {
-  height: 100%;
+.welcome-bg {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  left: 0; }
-
-body {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background: url("../img/welcome-background.jpg");
+  background-attachment: fixed;
+  background-position: 10% 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: filter .5s; }
+  @media (max-width: 480px) {
+    .welcome-bg {
+      background-size: cover; } }
 
-#page-home {
-  margin: 20px;
-  display: flex; }
+.welcome__text:hover ~ .welcome-bg {
+  filter: blur(1em); }
 
-.author {
-  margin-top: 100px; }
-  .author p {
-    margin: 0; }
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 20px 0 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
-.wrapper-starter {
-  width: 100%;
-  max-width: 700px;
-  background: white;
-  padding: 40px;
-  border-radius: 2px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
-  text-align: center; }
-  .wrapper-starter p {
-    color: #666; }
-
-h1 {
-  margin-bottom: 20px; }
-
-h4 {
-  margin-top: 100px; }
-
-.button {
-  margin-top: 50px;
-  border: 2px solid #0074D9;
-  color: #0074D9; }
-
-.flex-video {
-  border: 1px solid black; }
+.welcome__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
