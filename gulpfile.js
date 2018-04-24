@@ -11,6 +11,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
+    autoprefixer = require('gulp-autoprefixer'),
     images = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
@@ -38,6 +39,10 @@ gulp.task('sass', function() {
         .pipe(plumber())
         .pipe(sass({
             style: 'compressed'
+        }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
         }))
         .pipe(rename({
             basename: 'main',
