@@ -51,20 +51,25 @@
     position: absolute
     top: 50%
     left: 50%
-    height: 80vh
-    width: 80vw
+    height: 70vh
+    width: 70vw
     z-index: 111
     transform: translate(-50%, 10%)
     overflow: hidden
     transition: box-shadow .5s
     @media (max-height: 850px)
-        transform: translateY(-40%)
+        width: 80vw
+        transform: translate(-50%, 21.3%)
+    @media (min-height: 1024px)
+        width: 80vw
+        transform: translate(-50%, 21.3%)
 
 .welcome__hover:hover
     box-shadow: 0 2em 0 100em rgba(0, 0, 0, 0.45)
   
-.btn--welcome
-    font-size: 2em
+.button-wrapper
+    display: flex
+    align-content: flex-end
   
 
   
