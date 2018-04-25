@@ -43,7 +43,7 @@
   
   
 .welcome__hover:hover ~ .welcome-bg
-    filter: blur(10px)
+    filter: blur(1rem)
   
 .welcome__hover
     background: url("../img/background-welcome.jpg")
@@ -68,10 +68,26 @@
     box-shadow: 0 2em 0 100em rgba(0, 0, 0, 0.45)
   
 .button-wrapper
-    display: flex
-    align-content: flex-end
+    position: absolute
+    bottom: 0
+    right: 50%
+    transform: translate(50%, -90%)
   
-
-  
-  
+.welcome__text 
+    display: block
+    text-transform: uppercase
+    opacity: 0
+    transition: .5s
+    color: $color-primary
+    font-size: 3rem
+    position: absolute
     
+
+.btn--welcome:hover ~ .welcome__text
+    opacity: 1
+  
+  
+.btn--welcome:active ~ .fade-out
+    +keyframes (fade-out)
+
+

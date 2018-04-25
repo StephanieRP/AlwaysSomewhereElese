@@ -218,12 +218,14 @@ a {
     font-size: 3em;
     color: #0092C1;
     border-bottom: 5px solid #c12f00;
-    padding: 0 .3em;
-    text-shadow: 0 0.1em #FFF; }
+    padding: 0 .5rem;
+    text-shadow: 0 0.2rem #FFF;
+    -webkit-transition: .5s;
+    transition: .5s; }
     .btn--welcome:hover {
       background: #c12f00;
       border: none;
-      border-radius: 5px;
+      border-radius: .8rem;
       text-shadow: none; }
 
 ::-moz-selection {
@@ -329,8 +331,8 @@ hr {
   transition: filter .5s, -webkit-filter .5s; }
 
 .welcome__hover:hover ~ .welcome-bg {
-  -webkit-filter: blur(10px);
-  filter: blur(10px); }
+  -webkit-filter: blur(1rem);
+  filter: blur(1rem); }
 
 .welcome__hover {
   background: url("../img/background-welcome.jpg");
@@ -364,8 +366,41 @@ hr {
   box-shadow: 0 2em 0 100em rgba(0, 0, 0, 0.45); }
 
 .button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: end;
-  align-content: flex-end; }
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, -90%);
+  transform: translate(50%, -90%); }
+
+.welcome__text {
+  display: block;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #0092C1;
+  font-size: 3rem;
+  position: absolute; }
+
+.btn--welcome:hover ~ .welcome__text {
+  opacity: 1; }
+
+@-webkit-keyframes fade-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; } }
