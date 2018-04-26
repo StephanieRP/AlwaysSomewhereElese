@@ -210,6 +210,16 @@ section {
 a {
   text-decoration: none; }
 
+li {
+  list-style: none; }
+
+.section__title {
+  font-family: "Bitter", sans-serif;
+  font-weight: 700; }
+
+.color--primary {
+  color: #0092C1; }
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -220,8 +230,8 @@ a {
     border-bottom: 5px solid #c12f00;
     padding: 0 .5rem;
     text-shadow: 0 0.2rem #FFF;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-transition: all .5s;
+    transition: all .5s; }
     .btn--welcome:hover {
       background: #c12f00;
       border: none;
@@ -312,6 +322,85 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
+
+.about-section {
+  width: 80vw;
+  margin: 0 auto;
+  -webkit-transform: translate(8%, -6%);
+  transform: translate(8%, -6%); }
+
+.about__title {
+  font-size: 2rem; }
+
+.about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: absolute;
+  top: 80%;
+  left: 40%; }
+
+.about__name__ayesha::after,
+.about__name__stephanie::after,
+.about__name__ericka::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #0092C1; }
+
+.home__header {
+  position: fixed;
+  width: 100%;
+  height: 70vh;
+  background: url("../img/home-header.jpg");
+  background-position: 46% 55%;
+  background-repeat: no-repeat;
+  display: block; }
+
+.home__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+main {
+  padding-top: 25rem; }
+
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 5%; }
+
+.mobile-menu {
+  border-radius: 5px;
+  height: .3rem;
+  background: #0092C1;
+  margin: .5rem 0;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.mobile-nav:hover .mobile-menu {
+  width: 2.5rem; }
+
+.top {
+  width: 2.5rem; }
+
+.middle {
+  width: 2rem; }
+
+.bottom {
+  width: 1.8rem; }
+
+.home-nav {
+  display: none; }
 
 .welcome-header {
   position: relative; }
