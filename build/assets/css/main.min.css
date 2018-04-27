@@ -197,7 +197,8 @@ body {
   font-size: 14px;
   color: black;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; }
 
 .wrapper {
   width: 100%;
@@ -208,14 +209,18 @@ section {
   display: -webkit-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 li {
   list-style: none; }
 
 .section__title {
   font-family: "Bitter", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  width: 100vw;
+  font-size: 2rem;
+  text-align: center; }
 
 .color--primary {
   color: #0092C1; }
@@ -324,43 +329,57 @@ hr {
   height: 0; }
 
 .about-section {
-  width: 80vw;
-  margin: 0 auto;
-  -webkit-transform: translate(8%, -6%);
-  transform: translate(8%, -6%); }
-
-.about__title {
-  font-size: 2rem; }
-
-.about__images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  position: absolute;
-  top: 80%;
-  left: 40%; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
-.about__name__ayesha::after,
-.about__name__stephanie::after,
-.about__name__ericka::after {
-  content: "";
-  position: absolute;
+.about__images div {
   display: block;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: #0092C1; }
+  width: 100%;
+  text-align: center;
+  margin: .23rem 0;
+  border: 2px solid #c12f00;
+  border-right: none;
+  border-left: none;
+  background-origin: border-box; }
+  .about__images div a {
+    display: block;
+    padding-right: 1rem;
+    text-align: right;
+    color: #0092C1;
+    text-transform: uppercase; }
+
+.about__ayesha {
+  background: url("../img/ayesha.jpg");
+  background-position: 0 56%;
+  background-size: 50%;
+  background-repeat: no-repeat; }
+
+.about__stephanie {
+  background: url("../img/stephanie.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 0 30%; }
+
+.about__ericka {
+  background: url("../img/ericka.jpg");
+  background-position: 0 63%;
+  background-size: 50%;
+  background-repeat: no-repeat; }
 
 .home__header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 70vh;
   background: url("../img/home-header.jpg");
-  background-position: 46% 55%;
+  background-position: 46% 82%;
   background-repeat: no-repeat;
-  display: block; }
+  display: block;
+  background-attachment: fixed; }
 
 .home__header {
   display: -webkit-box;
@@ -373,7 +392,7 @@ hr {
 main {
   padding-top: 25rem; }
 
-.mobile-nav {
+#mobile-nav {
   display: block;
   position: fixed;
   top: 0;
@@ -387,7 +406,7 @@ main {
   -webkit-transition: .3s;
   transition: .3s; }
 
-.mobile-nav:hover .mobile-menu {
+#mobile-nav:hover .mobile-menu {
   width: 2.5rem; }
 
 .top {

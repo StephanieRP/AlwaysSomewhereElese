@@ -1,26 +1,53 @@
 .about-section
-    width: 80vw
-    margin: 0 auto
-    transform: translate(8%, -6%)
+    // width: 80vw
+    // margin: 0 auto
+    // transform: translate(8%, -6%)
+    display: flex
+    flex-direction: column
 
 
-.about__title
-    font-size: 2rem
+// .about__title
+//     font-size: 2rem
+//     text-align: center
 
 .about__images
-    display: flex
-    justify-content: space-around
-    position: absolute
-    top: 80%
-    left: 40%
+    // justify-content: space-around
+    // position: absolute
+    // top: 80%
+    // left: 40%
+    & div
+        display: block
+        width: 100%
+        text-align: center
+        margin: .23rem 0
+        border: 2px solid $color-secondary
+        border-right: none
+        border-left: none
+        background-origin: border-box
+        & a
+            display: block
+            padding-right: 1rem
+            text-align: right
+            color: $color-primary
+            text-transform: uppercase
+            
 
-.about__name__ayesha::after,
-.about__name__stephanie::after,
-.about__name__ericka::after
-    content: ""
-    position: absolute
-    display: block
-    width: 2rem
-    height: 2rem
-    border-radius: 50%
-    background: $color-primary
+.about__ayesha
+    background: url("../img/ayesha.jpg")
+    background-position: 0 56%
+    background-size: 50%
+    background-repeat: no-repeat
+
+
+.about__stephanie
+    background: url("../img/stephanie.jpg")
+    // background-position: 30% 30%
+    background-size: 50%
+    background-repeat: no-repeat
+    background-position: 0 30%
+
+.about__ericka
+    background: url("../img/ericka.jpg")
+    background-position: 0 63%
+    background-size: 50%
+    background-repeat: no-repeat
