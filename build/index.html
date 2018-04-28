@@ -30,11 +30,21 @@
 		</a>
 		<nav class="mobile-navbar">
 			<ul class="mobile">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Q&A</a></li>
-				<li><a href="#">Contact</a></li>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Q&A</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
 			</ul>
 		</nav>
 		<nav class="home-nav">
@@ -47,47 +57,142 @@
 			</ul>
 		</nav>
 
+	<!-- <div class="intro">
+			<h3 class="intro__1">Always Travel
+				</h3>
+				<h3 class="intro__2">All The Time</h3>
+	</div> -->
+
 	</header>
+
 	<main>
 		<section class="about-section">
+			<span class="border__title">About</span>
 			<h1 class="about__title section__title">
 				Who is
 				<span class="color--primary"> ASE?</span>
 			</h1>
-			<div class="about__images">
+			<div class="about__images wrapper">
 
-				<div class="about__ayesha"><a href="#about.html">Ayesha</a></div>
+				
+					<a href="#">
+							<div class="about__ayesha">
+								</div>
+					</a>
+				
+
+				<a href="#about.html" class="about__images__text">Ayesha</a>
+
+				<a href="#">
+						<div class="about__stephanie">
+							</div>
+				</a>
+				<a href="#about.html" class="about__images__text">Stephanie</a>
 
 
-				<div class="about__stephanie"><a href="#about.html">Stephanie</a></div>
-
-
-				<div class="about__ericka">
-						<a href="#about.html">Ericka</a>
-				</div>
+				<a href="#"><div class="about__ericka">
+					</div>
+				</a>
+				<a href="#about.html" class="about__images__text">Ericka</a>
 
 			</div>
 		</section>
 		<section class="blog-section">
+			
+				<span class="border__title border__title__blog">Blog</span>
 			<div class="blog__recent">
-					<h1 class="section__title">
-							Latest Adventures
-						</h1>
-				<div class="blog__recent__1">
+				<h1 class="section__title">
+					Latest <span class="color--primary">Adventures</span>				</h1>
+					<div class="wrapper">
+				<article class="blog__recent__1">
 					<h3 class="blog__recent__title">Title</h3>
-					<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto laudantium consequatur ratione! </p>
+					<span class="blog__recent__info">Posted on: 1/1/19</span>
+					<span class="blog__recent__info">By: Ayesha</span>
+					<img src="assets/img/blog-1.jpg" alt="" class="blog__recent__pic">
+					<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto
+						laudantium consequatur ratione! </p>
+					<a href="#" class="btn btn--read-more">Read More</a>
+				</article>
+				<article class="blog__recent__2">
+					<h3 class="blog__recent__title">Title</h3>
+					<span class="blog__recent__info">Posted on: 2/1/19</span>
+					<span class="blog__recent__info">By: Ericka</span>
+					<img src="assets/img/blog-2.jpg" alt="" class="blog__recent__pic">
+					<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto
+						laudantium consequatur ratione! </p>
+					<a href="#" class="btn btn--read-more">Read More</a>
+				</article>
+				<article class="blog__recent__3">
+					<h3 class="blog__recent__title">Title</h3>
+					<span class="blog__recent__info">Posted on: 3/1/19</span>
+					<span class="blog__recent__info">By: Stephanie</span>
+					<img src="assets/img/blog-3.jpg" alt="" class="blog__recent__pic">
+					<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto
+						laudantium consequatur ratione! </p>
 					<a href="#" class="btn btn--read-more">Read More</a>
 				</div>
-				<div class="blog__recent__2">
-						<h3 class="blog__recent__title">Title</h3>
-						<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto laudantium consequatur ratione! </p>
-					<a href="#" class="btn btn--read-more">Read More</a>
+			</div>
+			</div>
+		</section>
+		<section class="questions-section">
+			<span class="border__title">
+				Questions
+			</span>
+			<h1 class="section__title">
+				Recent <span class="color--primary">Questions</span>
+			</h1>
+			<article class="wrapper">
+				<p class="questions__by">
+					Someone asked:
+				</p>
+				<p class="question__asked">
+					What is the best way to find accommodation when living abroad?
+				</p>
+				<a href="#" class="btn btn--question">See Answer</a>
+			</article>
+		</section>
+		<section class="travel-section">
+			<span class="border__title">Tips</span>
+			<h1 class="section__title">
+				Travel <span class="color--primary">Tips</span>
+			</h1>
+			<div class="wrapper">
+				<div class="travel__tip-1">
+					<h3 class="travel__tip__title">
+						Where to Go?
+					</h3>
+					<p class="travel__tip__summary">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quam corrupti ad animi rerum et fuga, natus totam soluta accusamus.
+					</p>
+					<a href="#" class="btn btn--read-more">Lets Go</a>
+				</div>
+				<div class="travel__tip-2">
+						<h3 class="travel__tip__title">
+							What to do?
+						</h3>
+						<p class="travel__tip__summary">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quam corrupti ad animi rerum et fuga, natus totam soluta accusamus.
+						</p>
+						<a href="#" class="btn btn--read-more">Lets Eat</a>
 					</div>
-					<div class="blog__recent__3">
-							<h3 class="blog__recent__title">Title</h3>
-							<p class="blog__recent__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi porro aut ipsam ducimus debitis autem architecto laudantium consequatur ratione! </p>
-					<a href="#" class="btn btn--read-more">Read More</a>
+					<div class="travel__tip-3">
+							<h3 class="travel__tip__title">
+								What to bring?
+							</h3>
+							<p class="travel__tip__summary">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quam corrupti ad animi rerum et fuga, natus totam soluta accusamus.
+							</p>
+							<a href="#" class="btn btn--read-more">Lets See..</a>
 						</div>
+						<div class="travel__tip-3">
+								<h3 class="travel__tip__title">
+									Where to stay?
+								</h3>
+								<p class="travel__tip__summary">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quam corrupti ad animi rerum et fuga, natus totam soluta accusamus.
+								</p>
+								<a href="#" class="btn btn--read-more">Lets Sleep</a>
+							</div>
 			</div>
 		</section>
 	</main>

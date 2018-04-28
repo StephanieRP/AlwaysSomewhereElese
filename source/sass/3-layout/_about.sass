@@ -1,53 +1,57 @@
 .about-section
-    // width: 80vw
-    // margin: 0 auto
-    // transform: translate(8%, -6%)
-    display: flex
-    flex-direction: column
-
-
+    // display: flex
+    // flex-direction: column
+    position: relative
+    margin-bottom: 3rem
+    margin-top: 6rem
 // .about__title
 //     font-size: 2rem
 //     text-align: center
 
 .about__images
-    // justify-content: space-around
-    // position: absolute
-    // top: 80%
-    // left: 40%
     & div
+        height: 30vh
+
+.about__images__text
         display: block
-        width: 100%
+        // padding-right: 1rem
         text-align: center
-        margin: .23rem 0
-        border: 2px solid $color-secondary
-        border-right: none
-        border-left: none
-        background-origin: border-box
-        & a
-            display: block
-            padding-right: 1rem
-            text-align: right
-            color: $color-primary
-            text-transform: uppercase
+        color: $color-secondary
+        background-color: rgba($color-primary, .7)
+        text-transform: uppercase
+        font-size: 1.5em
+        margin-bottom: .5rem
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+
             
 
 .about__ayesha
-    background: url("../img/ayesha.jpg")
+    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ayesha.jpg")
+    background-origin: border-box
+    border: 1.5em solid rgba($color-primary, .7)
+    border-bottom: none
     background-position: 0 56%
-    background-size: 50%
+    background-size: cover
     background-repeat: no-repeat
 
 
 .about__stephanie
-    background: url("../img/stephanie.jpg")
-    // background-position: 30% 30%
-    background-size: 50%
+    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/stephanie.jpg")
+    background-origin: border-box
+    border: 1.5em solid rgba($color-primary, .7)
+    border-bottom: none
+    background-position: 0 25%
+    background-size: cover
     background-repeat: no-repeat
-    background-position: 0 30%
 
 .about__ericka
-    background: url("../img/ericka.jpg")
-    background-position: 0 63%
-    background-size: 50%
+    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ericka.jpg")
+    background-origin: border-box
+    border: 1.5em solid rgba($color-primary, .7)
+    border-bottom: none
+    background-position: 0 77%
+    background-size: cover
     background-repeat: no-repeat
+
+
