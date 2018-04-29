@@ -5,6 +5,36 @@
     right: 5%
     // opacity: 0
 
+.mobile-navbar
+    position: fixed
+    top: 0
+    background: rgba($color-secondary, .8)
+    height: 100%
+    width: 100%
+    font-family: $title-font-family
+    opacity: 0
+    z-index: -1
+
+.mobile__item
+    display: block
+    font-size: 3.3rem
+    text-align: center
+    padding-top: 1rem
+    
+    
+.mobile__item  a
+    color: $color-primary
+    display: block
+    width: 100%
+
+.mobile__social
+    display: flex
+    justify-content: space-around
+    font-size: 2rem
+
+.mobile__social a
+    color: $color-primary
+
 .mobile-menu  
     border-radius: 5px
     height: .3rem
@@ -20,10 +50,30 @@
 
 .middle
     width: 2rem
+    // transition: all .4s
 
 .bottom
     width: 1.8rem
 
-.home-nav, 
-.mobile-navbar
+.home-nav
     display: none
+
+.active
+    opacity: 0
+    transform: translateX(4rem)
+    width: 2.5rem
+
+.rotatedown
+    transform: rotateZ(45deg) translate(.1rem,1rem)
+    width: 2.5rem
+
+.rotateup
+    transform: rotateZ(-45deg) translate(.1rem,-1.2rem)
+    width: 2.5rem
+
+.appear
+    opacity: 1
+    z-index: 222
+
+.show
+    z-index: 223
