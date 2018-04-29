@@ -1,4 +1,31 @@
 .questions-section
     position: relative
-    display: flex
-    flex-direction: column
+    margin-top: 10rem
+
+
+.question__
+ &asked
+    background-image: linear-gradient(to right bottom, #0092c1, #00a0c6, #00aec7, #00bbc3, #00c7bd) 
+    border-radius: 3em
+    padding: 2rem
+    color: $color-white
+    font-size: 1.2em
+    text-shadow: 0 3px 5px rgba($color-black, .8)
+    &::after
+        content: ""
+        position: absolute
+        bottom: 5.3rem
+        left: 50%
+        background: transparent
+        border: 1rem solid $color-primary
+        // display: block
+        width: 0
+        height: 0
+        border-left-color: transparent
+        border-right-color: transparent
+        border-top-color: $color-primary-light
+        border-bottom-color: transparent
+ &by
+    font-size: 1.2em
+    text-align: center
+    margin-top: 2em
