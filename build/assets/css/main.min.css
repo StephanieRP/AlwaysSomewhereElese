@@ -265,7 +265,8 @@ ul {
 
 .dropdown-icon {
   color: #FFF;
-  text-align: right; }
+  text-align: right;
+  display: inline-block; }
 
 ::-moz-selection {
   background: #0092C1; }
@@ -405,7 +406,8 @@ hr {
   height: 30%;
   width: 100%;
   color: #FFF;
-  position: relative; }
+  position: relative;
+  margin-top: 2rem; }
 
 .home__header {
   width: 100vw;
@@ -670,43 +672,41 @@ hr {
   background: -webkit-gradient(linear, left top, right bottom, from(#0092c1), color-stop(#00a0c6), color-stop(#00aec7), color-stop(#00bbc3), to(#00c7bd));
   background: linear-gradient(to right bottom, #0092c1, #00a0c6, #00aec7, #00bbc3, #00c7bd);
   margin-bottom: 2rem;
+  max-height: 0;
+  overflow: hidden;
   text-align: center;
   color: #FFF;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  position: absolute;
-  width: 90%; }
-
-.dropdown__months1 {
-  top: 7rem; }
+  margin: 0; }
 
 .dropdown-active {
-  opacity: 1;
-  max-height: 5rem;
+  max-height: 6rem;
   display: block;
   -webkit-transform: scale(1);
-  transform: scale(1); }
+  transform: scale(1);
+  overflow: auto;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .dropdown-inactive {
   max-height: 0;
   -webkit-transform: scale(0);
-  transform: scale(0); }
+  transform: scale(0);
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .dropdown-open {
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s; }
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .dropdown-close {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s; }
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .welcome-header {
   position: relative; }

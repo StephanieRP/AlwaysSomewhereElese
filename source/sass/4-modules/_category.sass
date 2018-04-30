@@ -12,32 +12,30 @@
 .dropdown-list
     background: linear-gradient(to right bottom, #0092c1, #00a0c6, #00aec7, #00bbc3, #00c7bd) 
     margin-bottom: 2rem
-    // display: block
+    max-height: 0
+    overflow: hidden
     text-align: center
     color: $color-white
     border-bottom-left-radius: 10px
     border-bottom-right-radius: 10px
-    position: absolute
-    width: 90%
-
-.dropdown__months1
-    top: 7rem
-    // opacity: 0
+    margin: 0
 
 .dropdown-active
-    opacity: 1
-    max-height: 5rem
+    max-height: 6rem
     display: block
     transform: scale(1)
+    overflow: auto
+    transition: all .4s
 
 .dropdown-inactive
     max-height: 0
     transform: scale(0)
+    transition: all .4s    
 
 .dropdown-open
-    transform: rotate(-180deg)
-    transition: transform .3s
+    transform: rotate(-90deg) 
+    transition: all .4s
 
 .dropdown-close
-    transform: rotate(0deg)
-    transition: transform .3s
+    transform: rotate(90deg) 
+    transition: all .4s
