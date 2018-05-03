@@ -3,6 +3,9 @@
     position: fixed
     top: 0
     right: 5%
+    background: $color-white
+    border-radius: 50%
+    padding: 5px
     // opacity: 0
 
 .mobile-navbar
@@ -14,6 +17,7 @@
     font-family: $title-font-family
     opacity: 0
     z-index: -1
+    overflow: hidden
 
 .mobile__item
     display: block
@@ -64,11 +68,11 @@
     width: 2.5rem
 
 .rotatedown
-    transform: rotateZ(45deg) translate(.1rem,1rem)
+    transform: rotateZ(45deg) translate(.5rem,.7rem)
     width: 2.5rem
 
 .rotateup
-    transform: rotateZ(-45deg) translate(.1rem,-1.2rem)
+    transform: rotateZ(-45deg) translate(.5rem,-.7rem)
     width: 2.5rem
 
 .appear
