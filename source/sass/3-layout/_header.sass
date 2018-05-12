@@ -2,23 +2,33 @@
     width: 100vw
     height: 100vh
     background: url("../img/home-header.jpg")
-    background-position: 46% 96%
+    background-size: cover
     background-repeat: no-repeat
-    // display: block
-    background-attachment: fixed
     position: relative
-    // display: flex
-    // justify-content: space-between
+    @media (max-width: $small-screen) 
+        background-position: 28% 70%
 
-// .intro
-//     position: absolute
-//     bottom: 0
-//     width: 100%
-//     background: $color-secondary
-//     border-radius: 10px
-//     &__1, &__2
-//      color: $color-primary
-//      letter-spacing: 3px
-//      font-weight: 700
-//      text-align: center
-//      text-shadow: 2px -3px 5rem $color-white
+    // @media (min-width: 414px) 
+    //     background-position: 45% 100%
+    
+.home-items
+     width: 80%
+     margin: 0 auto
+     transform: translateY(50%)
+     @media (min-width: $tablet-screen)
+        max-width: 50%
+
+.logo
+    width: 300px
+    display: block
+    margin: 0 auto
+
+.header-title
+    color: $color-primary
+    text-align: center
+    
+
+.home-items__text
+    background: rgba($color-white, .7)
+    border-radius: 10px
+    

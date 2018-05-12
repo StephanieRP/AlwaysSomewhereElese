@@ -1,7 +1,7 @@
 // --------------------------------------------
 // Dependencies
 // --------------------------------------------
-var autoprefixer = require('gulp-autoprefixer'),
+let autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     del = require('del'),
     gulp = require('gulp'),
@@ -10,14 +10,13 @@ var autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
-    uglify = require('gulp-uglify'),
-    autoprefixer = require('gulp-autoprefixer'),
+    uglify = require('gulp-uglify-es').default,
     images = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
 
 // paths
-var styleSrc = 'source/sass/**/*.sass',
+let styleSrc = 'source/sass/**/*.sass',
     styleDest = 'build/assets/css/',
     htmlSrc = 'source/',
     htmlDest = 'build/',

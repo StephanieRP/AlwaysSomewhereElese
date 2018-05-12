@@ -233,11 +233,6 @@ ul {
 .color--primary {
   color: #0092C1; }
 
-.home-logo {
-  height: 18rem;
-  -webkit-transform: translate(-8%, 76%);
-  transform: translate(-8%, 76%); }
-
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -420,10 +415,34 @@ hr {
   width: 100vw;
   height: 100vh;
   background: url("../img/home-header.jpg");
-  background-position: 46% 96%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative; }
+  @media (max-width: 480px) {
+    .home__header {
+      background-position: 28% 70%; } }
+
+.home-items {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%); }
+  @media (min-width: 768px) {
+    .home-items {
+      max-width: 50%; } }
+
+.logo {
+  width: 300px;
+  display: block;
+  margin: 0 auto; }
+
+.header-title {
+  color: #0092C1;
+  text-align: center; }
+
+.home-items__text {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px; }
 
 .blog-section {
   position: relative;
@@ -450,6 +469,9 @@ hr {
   background: #FFF;
   border-radius: 50%;
   padding: 5px; }
+  @media (min-width: 1000px) {
+    .mobile-nav {
+      display: none; } }
 
 .mobile-navbar {
   position: fixed;
@@ -506,6 +528,30 @@ hr {
 
 .home-nav {
   display: none; }
+  @media (min-width: 1000px) {
+    .home-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.7);
+      padding-bottom: 1rem; } }
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #0092C1;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .top-nav__item:not(:last-child) {
+    padding-right: 6rem; }
 
 .active {
   opacity: 0;
@@ -697,8 +743,24 @@ hr {
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   background: #777;
-  -webkit-transform: scale() 1;
-  transform: scale() 1; }
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.category__title::before {
+  content: "\f055";
+  position: absolute;
+  right: 5%;
+  font-family: 'Font Awesome 5 Free';
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out; }
+
+.open::before {
+  content: "\f057";
+  position: absolute;
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out; }
 
 .welcome-header {
   position: relative; }

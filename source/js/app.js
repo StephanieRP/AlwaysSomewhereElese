@@ -1,11 +1,11 @@
 // Mobile View Slide out menu
-var navbarButton = document.querySelector(".mobile-nav");
-var navMenu = document.querySelector(".mobile-navbar");
-var topHam = 
+let navbarButton = document.querySelector(".mobile-nav");
+let navMenu = document.querySelector(".mobile-navbar");
+let topHam = 
 document.querySelector(".top");
-var middleHam =
+let middleHam =
 document.querySelector(".middle");
-var bottomHam =
+let bottomHam =
 document.querySelector(".bottom");
 
 // Open Mobile Nav Bar
@@ -21,7 +21,7 @@ function openNav() {
 
 // Categories Dropdown
 
-var dropAcc = document.getElementsByClassName("category__title");
+let dropAcc = document.getElementsByClassName("category__title");
 
 for (var i = 0; i < dropAcc.length; i++) {
     dropAcc[i].addEventListener("click", function() {
@@ -29,8 +29,10 @@ for (var i = 0; i < dropAcc.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
+            this.classList.remove("open");
         } else {
             panel.style.display = "block";
+            this.classList.toggle("open");
         }
     });
 }    
