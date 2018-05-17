@@ -1,7 +1,8 @@
 .blog-section
     position: relative
     margin-top: 7rem
-
+    @media (min-width: $tablet-screen)
+        margin-top: 3rem
 .blog__recent
     &__title
         font-size: 1.8rem
@@ -13,3 +14,22 @@
          margin-bottom: 1rem
     &__pic
         width: 50%
+
+@media (min-width: $tablet-screen)
+    .blog__recent__text, .blog__recent
+        font-size: 1.3rem
+    .blog__recent__1, .blog__recent__2, .blog__recent__3
+        margin: 0 2rem
+        text-align: left
+    .blog__recent__1
+        grid-column: 1/3
+
+@media (min-width: $large-screen)
+    .blog__recent__text, .blog__recent
+        font-size: 1.8rem
+    .blog__recent__1, .blog__recent__2, .blog__recent__3
+        margin: 0 2rem
+        text-align: center
+    .blog__recent__text
+        width: 70%
+        margin: 0 auto

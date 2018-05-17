@@ -1,46 +1,60 @@
 .about-section
-    // display: flex
-    // flex-direction: column
     margin-top: 6rem
-// .about__title
-//     font-size: 2rem
-//     text-align: center
-
+    @media (min-width: $tablet-screen)
+        margin-top: 2rem
 .about__images
     & div
         height: 30vh
+
+
+
+.about__images
+ @media (min-width: $large-screen)
+        display: flex
+        justify-content: space-around
 
 .about__images__text
         display: block
         // padding-right: 1rem
         text-align: center
-        color: $color-secondary
+        color: $color-white
         background-color: rgba($color-primary, .7)
         text-transform: uppercase
         font-size: 1.5em
         margin-bottom: .5rem
         border-bottom-left-radius: 10px
         border-bottom-right-radius: 10px
+        @media (min-width: $tablet-screen)
+            width: 80%
+            margin: 0 auto
+            border-radius: 10%
+            margin-bottom: 1rem
+        @media (min-width: $large-screen)
+            // display: inline-block
+            width: 70%
+            justify-content: center
+            font-weight: 700
+            margin: 0 auto
+        &:hover
+            color: $color-secondary
 
-            
 
+// .about__images__text:nth-of-type(2)
+//     @media (min-width: $tablet-screen)
+//         transform: translate(50%, -50%)
 .about__ayesha
     background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ayesha.jpg")
     background-origin: border-box
-    // border: 1.5em solid rgba($color-primary, .7)
-    border-bottom: none
+    border: 1em solid rgba($color-primary, .7)
     background-position: 0 56%
     background-size: cover
     background-repeat: no-repeat
-    border-top-left-radius: 10px
-    border-top-right-radius: 10px
 
 
 .about__stephanie
     background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/stephanie.jpg")
     background-origin: border-box
-    border: 1.5em solid rgba($color-primary, .7)
-    border-bottom: none
+    border: 1em solid rgba($color-primary, .7)
     background-position: 0 25%
     background-size: cover
     background-repeat: no-repeat
@@ -48,10 +62,23 @@
 .about__ericka
     background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ericka.jpg")
     background-origin: border-box
-    border: 1.5em solid rgba($color-primary, .7)
-    border-bottom: none
+    border: 1em solid rgba($color-primary, .7)
     background-position: 0 77%
     background-size: cover
     background-repeat: no-repeat
+    @media (min-width: $large-screen)
+        background-position: 70%
 
 
+
+
+
+.about__ayesha, .about__stephanie, .about__ericka
+    @media (min-width: $tablet-screen)
+        border-radius: 20%
+    @media (min-width: $large-screen)
+        border-radius: 50%
+        width: 25%
+        height: 20vh
+    // @media (min-height: 1366px)
+    //     width: 30%

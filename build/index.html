@@ -54,8 +54,8 @@
 		</nav>
 		<nav class="home-nav">
 			<ul class="top-nav">
-				<li class="top-nav__item"><a>Home</a></li>
-				<li class="top-nav__item"><a>About</a></li>
+						<li class="top-nav__item"><a href="index.html">Home</a></li>
+						<li class="top-nav__item"><a href="about.html">About</a></li>
 				<li class="top-nav__item"><a>Blog</a></li>
 				<li class="top-nav__item"><a>Q&A</a></li>
 				<li class="top-nav__item"><a>Contact</a></li>
@@ -74,7 +74,7 @@
 
 	</header>
 
-	<main>
+	<main class="grid-home-page">
 		<section class="about-section">
 			<span class="border__title">About</span>
 			<h1 class="about__title section__title">
@@ -84,26 +84,29 @@
 			<div class="about__images wrapper">
 
 
-				<a href="#">
+				
 					<div class="about__ayesha">
+							<a href="#about.html" class="about__images__text">Ayesha</a>
 					</div>
-				</a>
+				
 
 
-				<a href="#about.html" class="about__images__text">Ayesha</a>
+				
 
-				<a href="#">
+				
 					<div class="about__stephanie">
+							<a href="#about.html" class="about__images__text">Stephanie</a>
 					</div>
-				</a>
-				<a href="#about.html" class="about__images__text">Stephanie</a>
+				
+				
 
 
-				<a href="#">
+				
 					<div class="about__ericka">
+							<a href="#about.html" class="about__images__text">Ericka</a>
 					</div>
-				</a>
-				<a href="#about.html" class="about__images__text">Ericka</a>
+			
+				
 
 			</div>
 		</section>
@@ -115,7 +118,7 @@
 					Latest
 					<span class="color--primary">Adventures</span>
 				</h1>
-				<div class="wrapper">
+				<div class="wrapper grid-blog-home">
 					<article class="blog__recent__1">
 						<h3 class="blog__recent__title">Title</h3>
 						<span class="blog__recent__info">Posted on: 1/1/19</span>
@@ -154,7 +157,7 @@
 				Recent
 				<span class="color--primary">Questions</span>
 			</h1>
-			<article class="wrapper">
+			<article class="wrapper question">
 
 				<p class="question__asked">
 					What is the best way to find accommodation when living abroad?
@@ -172,7 +175,7 @@
 				Travel
 				<span class="color--primary">Tips</span>
 			</h1>
-			<div class="wrapper">
+			<div class="wrapper grid-tips-home">
 				<div class="travel__tip-1">
 					<h3 class="travel__tip__title">
 						Where to Go?
@@ -216,12 +219,47 @@
 			</div>
 		</section>
 
-		<section class="category-section">
-			
-				<h2 class="section__title">
+		<section class="side-bar grid-sidebar">
+
+			<div class="side-bar__social">
+				<h4 class="social__title">
+					Follow <span class="color--primary">Us</span>
+				</h4>
+				<div class="social__icons">
+						<a href=""><i class="fab fa-instagram side-bar-social"></i></a>
+						<a href="#"><i class="fab fa-facebook-square side-bar-social"></i></a>
+						<a href=""><i class="fab fa-twitter-square side-bar-social"></i></a>
+				</div>
+
+			</div>
+
+			<div class="side-bar__latest-pics grid-pictures">
+				<img src="../assets/img/insta1.jpg" alt="" class="insta-pics">
+				<img src="../assets/img/insta2.jpg" alt="" class="insta-pics">
+				<img src="../assets/img/insta3.jpg" alt="" class="insta-pics">
+				<img src="../assets/img/insta4.jpg" alt="" class="insta-pics">
+			</div>
+
+			<div class="sidebar__newsletter">
+				<h4 class="newsletter__title">
+					Keep Up with <span class="color--primary">Us</span>
+				</h4>
+
+				<p class="newsletter__summary">Want to know when we post a new blog <span class="color--primary"><strong>?</strong></span> <br> Want to know how to make the most out of your next trip abroad <span class="color--primary"><strong>?</strong></span><br> Fill out the form below and we will keep you up to date on the latest and greatest at <span class="color--primary"><strong>ASE!</strong></span></p>
+				<div class="newsletter__inputs">
+					<input type="text" class="newsletter-name"id="newsletter-name">
+					<label for="" class="newsletter-name">Name</label>
+
+					<input type="text" class="newsletter-email"id="newsletter-email">
+					<label for="newsletter-email" class="newsletter-name">Email</label>
+					<a href="" class="btn btn--submit">Submit</a>
+				</div>
+			</div>
+				<div class="side-bar__categories">
+				<h4 class="categories__title">
 					<span class="color--primary">Categories</span>
 	
-				</h2>
+				</h4>
 				<div class="wrapper">
 				<div class="category__time">
 						<h3 class="category__time__year category__title">2018</h3>
@@ -284,6 +322,7 @@
 								</li>
 							</ul>
 				</div>
+
 				<div class="category__place">
 						<h3 class="category__places category__title">Places
 						</h3>
@@ -324,6 +363,7 @@
 					</ul>
 				</div>
 			</div> 
+		</div>
 		</section>
 	</main>
 	

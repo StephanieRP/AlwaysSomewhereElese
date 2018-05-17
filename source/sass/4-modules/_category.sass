@@ -1,7 +1,12 @@
 .category-section
     position: relative
     margin-top: 7rem
+    @media (min-width: $tablet-screen)
+        margin-top: 3rem
    
+.categories__title
+    text-align: center
+    font-size: 2.5em
 
 .category__title
     text-align: center
@@ -10,6 +15,7 @@
     color: $color-white
     position: relative
     line-height: 1.3
+    cursor: pointer
 
 .dropdown-list
     background: linear-gradient(to right bottom, #0092c1, #00a0c6, #00aec7, #00bbc3, #00c7bd) 
@@ -22,9 +28,12 @@
     // border-bottom-right-radius: 10px
     margin: 0
 
-.category__
-    &location
+.dropdown-list a
         color: inherit
+        font-size: 1.5em
+.dropdown-list li:hover
+    background: rgba($color-secondary, .8)
+    color: $color-primary
 
 
 .display
@@ -38,11 +47,14 @@
   position: absolute
   right: 5%
   font-family: 'Font Awesome 5 Free'
-  transition: all .5s ease-out
+  transition: all .5s ease-out-in
 
 .open::before 
   content: "\f057"
   position: absolute
   display: block
   font-family: 'Font Awesome 5 Free'
-  transition: all .5s ease-out
+  transition: all .5s ease-out-in
+
+.dropdown__months2
+    columns: 2

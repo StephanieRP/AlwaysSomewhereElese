@@ -17,15 +17,33 @@
       border: none;
       border-radius: .8rem;
       text-shadow: none;
+
+  &--header
+    background: rgba($color-secondary, .8)
+    border-radius: 5px
+    color: $color-white
+    font-weight: 700
+    font-size: 1.5em
+    text-shadow: 0 2px 13px $color-black
+    box-shadow: 0 3px 15px $color-black
+    
       
   &--read-more
     display: block
     width: 100%
     background: rgba($color-secondary, .8)
     border-radius: 5px
-    color: $color-primary
+    color: $color-white
     font-weight: 700
     font-size: 1.5em
     text-align: center
     text-shadow: 0 2px 13px $color-black
     box-shadow: 0 3px 15px $color-black
+    @media (min-width: $tablet-screen)
+      width: 80%
+      margin: 0 auto
+
+  &--submit
+    display: block
+    width: 40%
+    margin: 0 auto

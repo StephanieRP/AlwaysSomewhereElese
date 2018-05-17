@@ -1,27 +1,42 @@
 .home__header
     width: 100vw
-    height: 100vh
+    height: 80vh
     background: url("../img/home-header.jpg")
     background-size: cover
     background-repeat: no-repeat
     position: relative
     @media (max-width: $small-screen) 
-        background-position: 28% 70%
+        background-position: 8% 70%
+    @media (min-width: $tablet-screen) 
+        background-position: 10%
+    @media (min-width: $large-screen) 
+        background-position: 45% 100%
+    @media (width: 1024px)
+        background-position: 10% 100%
 
-    // @media (min-width: 414px) 
-    //     background-position: 45% 100%
     
 .home-items
      width: 80%
      margin: 0 auto
-     transform: translateY(50%)
-     @media (min-width: $tablet-screen)
-        max-width: 50%
+     text-align: center
+     transform: translateY(15%)
+     @media (min-width: $large-screen)
+        width: 60%
+     @media (width: 1024px)
+        width: 80%
+
+
 
 .logo
     width: 300px
     display: block
     margin: 0 auto
+    @media (min-width: $tablet-screen)
+        width: 90%
+    @media (min-width: $large-screen)
+        width: 40%
+    @media (width: 1024px)
+        width: 90%
 
 .header-title
     color: $color-primary
@@ -31,4 +46,14 @@
 .home-items__text
     background: rgba($color-white, .7)
     border-radius: 10px
+    padding-bottom: .8rem
+    font-size: 1em
+
+/// About Header
+
+#about-header
+    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/about-background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 10% 80%
     
