@@ -1,7 +1,6 @@
 .about-section
-    margin-top: 6rem
-    @media (min-width: $tablet-screen)
-        margin-top: 2rem
+    margin-top: 7rem
+
 .about__images
     & div
         height: 30vh
@@ -39,33 +38,27 @@
             color: $color-secondary
 
 
-// .about__images__text:nth-of-type(2)
-//     @media (min-width: $tablet-screen)
-//         transform: translate(50%, -50%)
-.about__ayesha
-    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ayesha.jpg")
+.about__profile-pic
     background-origin: border-box
-    border: 1em solid rgba($color-primary, .7)
-    background-position: 0 56%
+    border-left: 1em solid rgba($color-primary, .7)
+    border-right: 1em solid rgba($color-primary, .7)
     background-size: cover
     background-repeat: no-repeat
+    @media screen and (min-width: $tablet-screen)
+        border: 1em solid rgba($color-primary, .7)
 
+.about__ayesha
+    background-image: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ayesha.jpg")
+    background-position: 0 56%
 
 .about__stephanie
-    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/stephanie.jpg")
-    background-origin: border-box
-    border: 1em solid rgba($color-primary, .7)
+    background-image: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/stephanie.jpg")
     background-position: 0 25%
-    background-size: cover
-    background-repeat: no-repeat
+
 
 .about__ericka
-    background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ericka.jpg")
-    background-origin: border-box
-    border: 1em solid rgba($color-primary, .7)
+    background-image: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),url("../img/ericka.jpg")
     background-position: 0 77%
-    background-size: cover
-    background-repeat: no-repeat
     @media (min-width: $large-screen)
         background-position: 70%
 
@@ -82,3 +75,33 @@
         height: 20vh
     // @media (min-height: 1366px)
     //     width: 30%
+
+
+div[id$="--pic"]
+    border-radius: 10px
+    height: 50vh
+    width: 50%
+    background-size: cover
+    border: 10px solid rgba($color-primary, .7)
+    margin: 2rem 0
+
+.about-us__summary
+    font-size: 1.5rem
+    font-weight: 400
+    text-align: justify
+
+.about-us__social
+    font-size: 1.5rem
+
+.about-us--post__title
+    text-align: center
+
+.mypost
+    display: flex
+    align-content: center
+    border-bottom: solid 3px $color-secondary
+    padding-bottom: 2rem
+    & a
+     width: 40%
+     margin-right: 2rem
+     margin-left: 1rem
